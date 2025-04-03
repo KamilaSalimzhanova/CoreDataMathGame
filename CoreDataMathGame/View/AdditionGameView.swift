@@ -44,7 +44,7 @@ struct AdditionGameView: View {
                 }
         }
         .fullScreenCover(isPresented: $highScorePresented, onDismiss: { gameViewModel.reset() }) {
-            Text("Enter new high score")
+            EnterNewHighScoreView(name: $name, isPresented: $highScorePresented, score: gameViewModel.score)
         }
         .onChange(of: showHighScore) { newValue in
             highScorePresented = newValue

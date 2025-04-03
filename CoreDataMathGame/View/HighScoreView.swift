@@ -8,16 +8,28 @@
 import SwiftUI
 
 struct HighScoreView: View {
+    @EnvironmentObject private var hVM: HighScoreViewModel
     var body: some View {
         ZStack {
             HighScoreBackgroundView()
-            Text("High score game view")
+            VStack {
+                HighScoreTitle()
+                List {
+                    ForEach(Array(hVM.highScores.enumerated()), id:\.offset) { (idx, entity) in
+                        RankScoreView(rank: idx+1, score: Int(entity.score), entity: entity)
+                    }
+                }
+                Image(Creatures.creature4.rawValue)
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: .infinity, height: 100)
+            }
         }
     }
 }
 
 struct HighScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        HighScoreView()
+        HighScoreView().environmentObject(HighScoreViewModel())
     }
 }
