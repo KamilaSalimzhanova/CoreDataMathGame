@@ -51,6 +51,11 @@
 		8EB64E162D9E83410006DEC5 /* CoreDataMathGame */ = {
 			isa = PBXGroup;
 			children = (
+				8EB64E292D9E84410006DEC5 /* Constants */,
+				8EB64E282D9E843B0006DEC5 /* Extensions */,
+				8EB64E272D9E84300006DEC5 /* Models */,
+				8EB64E262D9E84280006DEC5 /* ViewModels */,
+				8EB64E252D9E84250006DEC5 /* View */,
 				8EB64E172D9E83410006DEC5 /* CoreDataMathGameApp.swift */,
 				8EB64E192D9E83410006DEC5 /* ContentView.swift */,
 				8EB64E1B2D9E83420006DEC5 /* Assets.xcassets */,
@@ -65,6 +70,41 @@
 				8EB64E1E2D9E83420006DEC5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8EB64E252D9E84250006DEC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8EB64E262D9E84280006DEC5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8EB64E272D9E84300006DEC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8EB64E282D9E843B0006DEC5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8EB64E292D9E84410006DEC5 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
