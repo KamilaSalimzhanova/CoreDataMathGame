@@ -1,14 +1,17 @@
 import Foundation
 
 struct ProblemModel: Identifiable {
+    // MARK: - Struct properties
     let id = UUID()
     let number1: Int
     let number2: Int
     let level: Int
     var solutions: [Int]
     
+    // MARK: - Computed property
     var answer: Int { solutions[0] }
     
+    // MARK: - Initializer
     init(level: Int) {
         self.level = level
         let lowerRange = (level - 1) * 5 // 0, 5, 10
@@ -19,10 +22,12 @@ struct ProblemModel: Identifiable {
         self.solutions = generateSolution()
     }
     
+    // MARK: - Public functions
     func checkSolution(value: Int) -> Bool {
         !solutions.isEmpty && value == answer
     }
     
+    // MARK: - Private functions
     private func generateSolution() -> [Int] {
         var newSolution: [Int] = []
         newSolution.append(number1 + number2) // 27
@@ -31,6 +36,6 @@ struct ProblemModel: Identifiable {
         let aboveAnswer = number1 + number2 + 5 // 32
         newSolution.append(Int.random(in: number1 + number2 + 1...aboveAnswer))
         newSolution.append(Int.random(in: belowAnswer..<number1 + number2))
-        return newSolution.shuffled()
+        return newSolution
     }
 }

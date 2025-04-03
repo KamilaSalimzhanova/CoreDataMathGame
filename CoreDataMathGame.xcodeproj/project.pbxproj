@@ -19,6 +19,7 @@
 		8EB64E3C2D9E8FF60006DEC5 /* PersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E3B2D9E8FF60006DEC5 /* PersistentController.swift */; };
 		8EB64E3E2D9E94BE0006DEC5 /* ProblemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E3D2D9E94BE0006DEC5 /* ProblemModel.swift */; };
 		8EB64E412D9E98770006DEC5 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E402D9E98770006DEC5 /* GameModel.swift */; };
+		8EB64E432D9E99EB0006DEC5 /* AdditionGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E422D9E99EB0006DEC5 /* AdditionGameViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		8EB64E3B2D9E8FF60006DEC5 /* PersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentController.swift; sourceTree = "<group>"; };
 		8EB64E3D2D9E94BE0006DEC5 /* ProblemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemModel.swift; sourceTree = "<group>"; };
 		8EB64E402D9E98770006DEC5 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		8EB64E422D9E99EB0006DEC5 /* AdditionGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionGameViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		8EB64E262D9E84280006DEC5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				8EB64E422D9E99EB0006DEC5 /* AdditionGameViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -136,8 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				8EB64E362D9E8DBD0006DEC5 /* HighScores.xcdatamodeld */,
-				8EB64E3B2D9E8FF60006DEC5 /* PersistentController.swift */,
 				8EB64E392D9E8DF90006DEC5 /* HighScoreViewModel.swift */,
+				8EB64E3B2D9E8FF60006DEC5 /* PersistentController.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				8EB64E3C2D9E8FF60006DEC5 /* PersistentController.swift in Sources */,
 				8EB64E412D9E98770006DEC5 /* GameModel.swift in Sources */,
 				8EB64E2B2D9E8A660006DEC5 /* ImageConstants.swift in Sources */,
+				8EB64E432D9E99EB0006DEC5 /* AdditionGameViewModel.swift in Sources */,
 				8EB64E2D2D9E8BF70006DEC5 /* TestLocalizations.swift in Sources */,
 				8EB64E382D9E8DBD0006DEC5 /* HighScores.xcdatamodeld in Sources */,
 				8EB64E182D9E83410006DEC5 /* CoreDataMathGameApp.swift in Sources */,
