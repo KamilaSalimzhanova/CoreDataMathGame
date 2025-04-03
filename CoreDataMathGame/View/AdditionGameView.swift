@@ -13,8 +13,8 @@ struct AdditionGameView: View {
         ZStack {
             MainBackgroundView()
             VStack {
-                Text("Scores")
-                
+                ScoresLivesView(scores: gameViewModel.score, lives: gameViewModel.lives, maxLives: 3, levels: gameViewModel.levels)
+                Spacer()
             }
         }
     }

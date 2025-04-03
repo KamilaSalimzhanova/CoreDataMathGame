@@ -5,12 +5,14 @@ final class AdditionGameViewModel: ObservableObject {
     private var problemCount = 0
     private var nextLevelAfter = 5
     
-    private var score: Int { gameModel.getScore() }
-    private var timeToMoveToNextLevel: Bool { problemCount % nextLevelAfter == 0 } // 5, 10, 15 - move
-    private var number1: Int { gameModel.getNumber1() }
-    private var number2: Int { gameModel.getNumber2() }
-    private var possibleSolutions: [Int] { gameModel.getSolutions().shuffled() }
-    private var answer: Int { gameModel.getAnswer() }
+    var score: Int { gameModel.getScore() }
+    var lives: Int { gameModel.getLives() }
+    var levels: Int { gameModel.getLevel() }
+    var timeToMoveToNextLevel: Bool { problemCount % nextLevelAfter == 0 } // 5, 10, 15 - move
+    var number1: Int { gameModel.getNumber1() }
+    var number2: Int { gameModel.getNumber2() }
+    var possibleSolutions: [Int] { gameModel.getSolutions().shuffled() }
+    var answer: Int { gameModel.getAnswer() }
     
     private func generateNumbers() {
         gameModel.setCurrentProblem(ProblemModel(level: gameModel.getLevel()))

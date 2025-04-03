@@ -16,11 +16,12 @@ struct TitleValueView: View {
             Text("\(title)")
             Text("\(value)")
         }
-        .fontWeight(.semibold)
-        .foregroundStyle(.black)
+        .fontWeight(.bold)
+        .foregroundStyle(.primary)
         .padding()
         .background(
-            RoundedRectangle(cornerRadius: 30).foregroundColor(.white)
+            RoundedRectangle(cornerRadius: 25).foregroundColor(.white)
+                .shadow(color: .pink.opacity(0.5), radius: 10)
         )
     }
 }

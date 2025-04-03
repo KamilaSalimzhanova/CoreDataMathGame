@@ -60,4 +60,5 @@ struct GameModel: Identifiable {
     func getSolutions() -> [Int] { self.currentProblem.solutions }
     func getAnswer() -> Int { self.currentProblem.answer }
     func getLevel() -> Int { self.level }
+    func getLives() -> Int { self.lives }
 }

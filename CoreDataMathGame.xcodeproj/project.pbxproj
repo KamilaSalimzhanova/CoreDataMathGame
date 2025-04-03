@@ -110,14 +110,11 @@
 		8EB64E252D9E84250006DEC5 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8EB64E2C2D9E8BF70006DEC5 /* TestLocalizations.swift */,
-				8EB64E192D9E83410006DEC5 /* ContentView.swift */,
-				8EB64E4F2D9EA32C0006DEC5 /* TitleValueView.swift */,
+				8EB64E552D9EA78E0006DEC5 /* HelperViews */,
 				8EB64E462D9EA0390006DEC5 /* BackgroundView */,
-				8EB64E512D9EA3B40006DEC5 /* LivesView.swift */,
 				8EB64E492D9EA0C00006DEC5 /* AdditionGameView.swift */,
 				8EB64E4B2D9EA1290006DEC5 /* HighScoreView.swift */,
-				8EB64E4D2D9EA1B10006DEC5 /* ScoresLivesView.swift */,
+				8EB64E192D9E83410006DEC5 /* ContentView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -172,6 +169,17 @@
 				8EB64E472D9EA04A0006DEC5 /* HighScoreBackgroundView.swift */,
 			);
 			path = BackgroundView;
+			sourceTree = "<group>";
+		};
+		8EB64E552D9EA78E0006DEC5 /* HelperViews */ = {
+			isa = PBXGroup;
+			children = (
+				8EB64E2C2D9E8BF70006DEC5 /* TestLocalizations.swift */,
+				8EB64E4F2D9EA32C0006DEC5 /* TitleValueView.swift */,
+				8EB64E512D9EA3B40006DEC5 /* LivesView.swift */,
+				8EB64E4D2D9EA1B10006DEC5 /* ScoresLivesView.swift */,
+			);
+			path = HelperViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

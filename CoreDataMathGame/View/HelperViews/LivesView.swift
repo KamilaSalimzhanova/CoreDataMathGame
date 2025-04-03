@@ -19,9 +19,9 @@ struct LivesView: View {
                 Image(imageName.rawValue)
                     .resizable()
                     .scaledToFit()
-                    .frame(width: 40.0, height: 40.0, alignment: .center)
+                    .frame(width: 35.0, height: 35.0, alignment: .center)
                     .opacity(i >= numberOfLives ? 0 : 1)
-                    .offset(y: animateWave ? -2 : 2)
+                    .offset(y: animateWave ? -3 : 3)
                     .animation(
                         Animation.easeInOut(duration: 0.9)
                             .repeatForever(),
