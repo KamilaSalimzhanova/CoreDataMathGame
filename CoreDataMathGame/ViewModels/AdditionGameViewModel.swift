@@ -2,9 +2,12 @@ import Foundation
 
 final class AdditionGameViewModel: ObservableObject {
     @Published var gameModel: GameModel = GameModel.defaultGame
+    
+    // MARK: - Private properties
     private var problemCount = 0
     private var nextLevelAfter = 5
     
+    // MARK: - Computed properties
     var score: Int { gameModel.getScore() }
     var lives: Int { gameModel.getLives() }
     var levels: Int { gameModel.getLevel() }
@@ -14,7 +17,8 @@ final class AdditionGameViewModel: ObservableObject {
     var possibleSolutions: [Int] { gameModel.getSolutions().shuffled() }
     var answer: Int { gameModel.getAnswer() }
     
-    private func generateNumbers() {
+    // MARK: - Public functions
+    func generateNumbers() {
         gameModel.setCurrentProblem(ProblemModel(level: gameModel.getLevel()))
         problemCount += 1
         if timeToMoveToNextLevel {

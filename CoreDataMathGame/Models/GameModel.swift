@@ -16,7 +16,7 @@ struct GameModel: Identifiable {
     var gameOver: Bool { lives == 0 }
     
     // MARK: - Initializer of singleton struct
-    private init(level: Int, score: Int, speed: Int, lives: Int) {
+    init(level: Int, score: Int, speed: Int, lives: Int) {
         self.level = level
         self.score = score
         self.speed = speed
@@ -42,7 +42,7 @@ struct GameModel: Identifiable {
     }
     
     mutating func loseLife() {
-        self.lives = max(self.level - 1, 0)
+        self.lives = max(self.lives - 1, 0)
         self.score = max(self.score - 2, 0)
     }
     

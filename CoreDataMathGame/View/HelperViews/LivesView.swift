@@ -24,7 +24,7 @@ struct LivesView: View {
                     .offset(y: animateWave ? -3 : 3)
                     .animation(
                         Animation.easeInOut(duration: 0.9)
-                            .repeatForever(),
+                            .repeatForever().delay(Double(i) * 0.2),
                         value: animateWave
                     )
             }

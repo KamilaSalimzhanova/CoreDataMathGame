@@ -27,6 +27,9 @@
 		8EB64E4E2D9EA1B10006DEC5 /* ScoresLivesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E4D2D9EA1B10006DEC5 /* ScoresLivesView.swift */; };
 		8EB64E502D9EA32C0006DEC5 /* TitleValueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E4F2D9EA32C0006DEC5 /* TitleValueView.swift */; };
 		8EB64E522D9EA3B40006DEC5 /* LivesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E512D9EA3B40006DEC5 /* LivesView.swift */; };
+		8EB64E572D9EA9B60006DEC5 /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E562D9EA9B60006DEC5 /* BubbleView.swift */; };
+		8EB64E592D9EAFEF0006DEC5 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E582D9EAFEF0006DEC5 /* OptionsView.swift */; };
+		8EB64E5B2D9EB3BB0006DEC5 /* GameOverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E5A2D9EB3BB0006DEC5 /* GameOverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		8EB64E4D2D9EA1B10006DEC5 /* ScoresLivesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoresLivesView.swift; sourceTree = "<group>"; };
 		8EB64E4F2D9EA32C0006DEC5 /* TitleValueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleValueView.swift; sourceTree = "<group>"; };
 		8EB64E512D9EA3B40006DEC5 /* LivesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivesView.swift; sourceTree = "<group>"; };
+		8EB64E562D9EA9B60006DEC5 /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
+		8EB64E582D9EAFEF0006DEC5 /* OptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		8EB64E5A2D9EB3BB0006DEC5 /* GameOverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,7 @@
 				8EB64E492D9EA0C00006DEC5 /* AdditionGameView.swift */,
 				8EB64E4B2D9EA1290006DEC5 /* HighScoreView.swift */,
 				8EB64E192D9E83410006DEC5 /* ContentView.swift */,
+				8EB64E5A2D9EB3BB0006DEC5 /* GameOverView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -178,6 +185,8 @@
 				8EB64E4F2D9EA32C0006DEC5 /* TitleValueView.swift */,
 				8EB64E512D9EA3B40006DEC5 /* LivesView.swift */,
 				8EB64E4D2D9EA1B10006DEC5 /* ScoresLivesView.swift */,
+				8EB64E562D9EA9B60006DEC5 /* BubbleView.swift */,
+				8EB64E582D9EAFEF0006DEC5 /* OptionsView.swift */,
 			);
 			path = HelperViews;
 			sourceTree = "<group>";
@@ -266,8 +275,11 @@
 				8EB64E412D9E98770006DEC5 /* GameModel.swift in Sources */,
 				8EB64E2B2D9E8A660006DEC5 /* ImageConstants.swift in Sources */,
 				8EB64E502D9EA32C0006DEC5 /* TitleValueView.swift in Sources */,
+				8EB64E5B2D9EB3BB0006DEC5 /* GameOverView.swift in Sources */,
 				8EB64E432D9E99EB0006DEC5 /* AdditionGameViewModel.swift in Sources */,
 				8EB64E522D9EA3B40006DEC5 /* LivesView.swift in Sources */,
+				8EB64E592D9EAFEF0006DEC5 /* OptionsView.swift in Sources */,
+				8EB64E572D9EA9B60006DEC5 /* BubbleView.swift in Sources */,
 				8EB64E2D2D9E8BF70006DEC5 /* TestLocalizations.swift in Sources */,
 				8EB64E382D9E8DBD0006DEC5 /* HighScores.xcdatamodeld in Sources */,
 				8EB64E182D9E83410006DEC5 /* CoreDataMathGameApp.swift in Sources */,
