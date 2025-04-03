@@ -11,4 +11,19 @@ final class AdditionGameViewModel: ObservableObject {
     private var number2: Int { gameModel.getNumber2() }
     private var possibleSolutions: [Int] { gameModel.getSolutions().shuffled() }
     private var answer: Int { gameModel.getAnswer() }
+    
+    private func generateNumbers() {
+        gameModel.setCurrentProblem(ProblemModel(level: gameModel.getLevel()))
+        problemCount += 1
+        if timeToMoveToNextLevel {
+            gameModel.setLevel()
+        }
+    }
+    
+    func increaseScore() { gameModel.increaseScore() }
+    func loseLife() { gameModel.loseLife() }
+    func reset() {
+        gameModel.reset()
+        problemCount = 0
+    }
 }
