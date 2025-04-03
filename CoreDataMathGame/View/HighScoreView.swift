@@ -18,7 +18,9 @@ struct HighScoreView: View {
                     ForEach(Array(hVM.highScores.enumerated()), id:\.offset) { (idx, entity) in
                         RankScoreView(rank: idx+1, score: Int(entity.score), entity: entity)
                     }
+                    .onDelete(perform: hVM.deleteScore)
                 }
+                .listStyle(.sidebar)
                 Image(Creatures.creature4.rawValue)
                     .resizable()
                     .scaledToFit()

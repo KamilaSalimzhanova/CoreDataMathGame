@@ -23,12 +23,12 @@ struct RankScoreView: View {
             if editMode {
                 HStack {
                     TextField(entity.name ?? "name", text: $name)
-                        .padding()
-                        .background(.pink.gradient)
-                        .padding()
-                        .fontWeight(.semibold)
                         .foregroundColor(.black)
-                        .cornerRadius(15)
+                        .fontWeight(.semibold)
+                        .padding()
+                        .background(.gray.gradient.opacity(0.4))
+                        .cornerRadius(20)
+                        .padding()
                     
                     Button {
                         highScoreViewModel.updateEntity(entity, newName: name.isEmpty ? (entity.name ?? "") : name)

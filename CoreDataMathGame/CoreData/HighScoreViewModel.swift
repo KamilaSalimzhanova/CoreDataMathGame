@@ -27,17 +27,18 @@ final class HighScoreViewModel: ObservableObject {
         saveHighScore()
     }
     
-    func deleteHighScore(_ entity: HighScoreEntity) {
-        context.delete(entity)
-        saveHighScore()
-    }
-    
     func isNewHighScore(_ score: Int64) -> Bool {
         if score <= 0 { return false }
         if let minHighScore {
             return minHighScore < score || highScores.count < 100
         }
         return true
+    }
+    
+    func deleteScore(_ indexSet: IndexSet) {
+        guard let index = indexSet.first else { return }
+        let entity = highScores[index]
+        deleteHighScore(entity)
     }
     
     // MARK: - Private functions
@@ -60,4 +61,8 @@ final class HighScoreViewModel: ObservableObject {
         }
     }
     
+    private func deleteHighScore(_ entity: HighScoreEntity) {
+        context.delete(entity)
+        saveHighScore()
+    }
 }
