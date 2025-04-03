@@ -12,6 +12,7 @@
 		8E69525E2D9F19EF0048B608 /* VTextImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E69525D2D9F19EF0048B608 /* VTextImage.swift */; };
 		8E6952602D9F1D730048B608 /* RankScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E69525F2D9F1D730048B608 /* RankScoreView.swift */; };
 		8E6952622D9F202D0048B608 /* NumericExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6952612D9F202D0048B608 /* NumericExtension.swift */; };
+		8E6952642D9F265B0048B608 /* SelectOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6952632D9F265B0048B608 /* SelectOptionView.swift */; };
 		8EB64E182D9E83410006DEC5 /* CoreDataMathGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E172D9E83410006DEC5 /* CoreDataMathGameApp.swift */; };
 		8EB64E1A2D9E83410006DEC5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E192D9E83410006DEC5 /* ContentView.swift */; };
 		8EB64E1C2D9E83420006DEC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB64E1B2D9E83420006DEC5 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		8E69525D2D9F19EF0048B608 /* VTextImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTextImage.swift; sourceTree = "<group>"; };
 		8E69525F2D9F1D730048B608 /* RankScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankScoreView.swift; sourceTree = "<group>"; };
 		8E6952612D9F202D0048B608 /* NumericExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericExtension.swift; sourceTree = "<group>"; };
+		8E6952632D9F265B0048B608 /* SelectOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectOptionView.swift; sourceTree = "<group>"; };
 		8EB64E142D9E83410006DEC5 /* CoreDataMathGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataMathGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB64E172D9E83410006DEC5 /* CoreDataMathGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataMathGameApp.swift; sourceTree = "<group>"; };
 		8EB64E192D9E83410006DEC5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 		8EB64E552D9EA78E0006DEC5 /* HelperViews */ = {
 			isa = PBXGroup;
 			children = (
+				8E6952632D9F265B0048B608 /* SelectOptionView.swift */,
 				8EB64E2C2D9E8BF70006DEC5 /* TestLocalizations.swift */,
 				8EB64E4F2D9EA32C0006DEC5 /* TitleValueView.swift */,
 				8EB64E512D9EA3B40006DEC5 /* LivesView.swift */,
@@ -283,6 +286,7 @@
 				8EB64E1A2D9E83410006DEC5 /* ContentView.swift in Sources */,
 				8E6952602D9F1D730048B608 /* RankScoreView.swift in Sources */,
 				8EB64E3C2D9E8FF60006DEC5 /* PersistentController.swift in Sources */,
+				8E6952642D9F265B0048B608 /* SelectOptionView.swift in Sources */,
 				8EB64E4A2D9EA0C00006DEC5 /* AdditionGameView.swift in Sources */,
 				8EB64E4C2D9EA1290006DEC5 /* HighScoreView.swift in Sources */,
 				8EB64E4E2D9EA1B10006DEC5 /* ScoresLivesView.swift in Sources */,
