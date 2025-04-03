@@ -8,7 +8,14 @@
 import SwiftUI
 
 struct AdditionGameView: View {
+    @EnvironmentObject private var highScoreVm: HighScoreViewModel
     @StateObject private var gameViewModel = AdditionGameViewModel()
+    @State private var highScorePresented = false
+    @State private var name = ""
+    
+    var showHighScore: Bool {
+        gameViewModel.gameModel.gameOver && highScoreVm.isNewHighScore(Int64(gameViewModel.score))
+    }
     private var showGameOverView: Bool { gameViewModel.gameModel.gameOver }
     var body: some View {
         ZStack {
@@ -36,11 +43,17 @@ struct AdditionGameView: View {
                     gameViewModel.reset()
                 }
         }
+        .fullScreenCover(isPresented: $highScorePresented, onDismiss: { gameViewModel.reset() }) {
+            Text("Enter new high score")
+        }
+        .onChange(of: showHighScore) { newValue in
+            highScorePresented = newValue
+        }
     }
 }
 
 struct AdditionGameView_Previews: PreviewProvider {
     static var previews: some View {
-        AdditionGameView()
+        AdditionGameView().environmentObject(HighScoreViewModel())
     }
 }
