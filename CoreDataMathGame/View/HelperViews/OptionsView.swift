@@ -14,9 +14,9 @@ struct OptionsView: View {
         LazyVGrid(columns: columns) {
             ForEach(vm.possibleSolutions, id:\.self) { option in
                 
-                let cheatColor: Color = (option == vm.answer ? .red :.black)
+              //  let cheatColor: Color = (option == vm.answer ? .red :.black)
                 
-                BubbleView(textColor: cheatColor, backgroundColor: .purple.opacity(0.7), text: "\(option)", name: "bubble2", bubbleSize: 80)
+                BubbleView(textColor: .black, backgroundColor: .purple.opacity(0.7), text: "\(option)", name: "bubble2", bubbleSize: 80)
                     .onTapGesture {
                         if vm.answer == option {
                             vm.increaseScore()
