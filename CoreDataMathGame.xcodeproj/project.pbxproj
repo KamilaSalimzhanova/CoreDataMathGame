@@ -17,6 +17,8 @@
 		8EB64E382D9E8DBD0006DEC5 /* HighScores.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E362D9E8DBD0006DEC5 /* HighScores.xcdatamodeld */; };
 		8EB64E3A2D9E8DF90006DEC5 /* HighScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E392D9E8DF90006DEC5 /* HighScoreViewModel.swift */; };
 		8EB64E3C2D9E8FF60006DEC5 /* PersistentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E3B2D9E8FF60006DEC5 /* PersistentController.swift */; };
+		8EB64E3E2D9E94BE0006DEC5 /* ProblemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E3D2D9E94BE0006DEC5 /* ProblemModel.swift */; };
+		8EB64E412D9E98770006DEC5 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB64E402D9E98770006DEC5 /* GameModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		8EB64E372D9E8DBD0006DEC5 /* HighScores.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HighScores.xcdatamodel; sourceTree = "<group>"; };
 		8EB64E392D9E8DF90006DEC5 /* HighScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewModel.swift; sourceTree = "<group>"; };
 		8EB64E3B2D9E8FF60006DEC5 /* PersistentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentController.swift; sourceTree = "<group>"; };
+		8EB64E3D2D9E94BE0006DEC5 /* ProblemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemModel.swift; sourceTree = "<group>"; };
+		8EB64E402D9E98770006DEC5 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 				8EB64E282D9E843B0006DEC5 /* Extensions */,
 				8EB64E272D9E84300006DEC5 /* Models */,
 				8EB64E262D9E84280006DEC5 /* ViewModels */,
+				8EB64E3F2D9E94C90006DEC5 /* CoreData */,
 				8EB64E252D9E84250006DEC5 /* View */,
 				8EB64E1B2D9E83420006DEC5 /* Assets.xcassets */,
 				8EB64E1D2D9E83420006DEC5 /* Preview Content */,
@@ -98,8 +103,6 @@
 		8EB64E262D9E84280006DEC5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				8EB64E392D9E8DF90006DEC5 /* HighScoreViewModel.swift */,
-				8EB64E3B2D9E8FF60006DEC5 /* PersistentController.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -107,7 +110,8 @@
 		8EB64E272D9E84300006DEC5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8EB64E362D9E8DBD0006DEC5 /* HighScores.xcdatamodeld */,
+				8EB64E3D2D9E94BE0006DEC5 /* ProblemModel.swift */,
+				8EB64E402D9E98770006DEC5 /* GameModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -126,6 +130,16 @@
 				8EB64E322D9E8CD30006DEC5 /* Localizable.strings */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		8EB64E3F2D9E94C90006DEC5 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				8EB64E362D9E8DBD0006DEC5 /* HighScores.xcdatamodeld */,
+				8EB64E3B2D9E8FF60006DEC5 /* PersistentController.swift */,
+				8EB64E392D9E8DF90006DEC5 /* HighScoreViewModel.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,11 +218,13 @@
 			files = (
 				8EB64E1A2D9E83410006DEC5 /* ContentView.swift in Sources */,
 				8EB64E3C2D9E8FF60006DEC5 /* PersistentController.swift in Sources */,
+				8EB64E412D9E98770006DEC5 /* GameModel.swift in Sources */,
 				8EB64E2B2D9E8A660006DEC5 /* ImageConstants.swift in Sources */,
 				8EB64E2D2D9E8BF70006DEC5 /* TestLocalizations.swift in Sources */,
 				8EB64E382D9E8DBD0006DEC5 /* HighScores.xcdatamodeld in Sources */,
 				8EB64E182D9E83410006DEC5 /* CoreDataMathGameApp.swift in Sources */,
 				8EB64E3A2D9E8DF90006DEC5 /* HighScoreViewModel.swift in Sources */,
+				8EB64E3E2D9E94BE0006DEC5 /* ProblemModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
